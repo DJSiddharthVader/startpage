@@ -17,6 +17,7 @@ function getTime(){
     if(nmonth<=9) nmonth="0"+nmonth;
     var nyear=t.getFullYear()-2000;
     var timedate = `${nhour}:${nmin} ${nm}<br /> ${nday}/${nmonth}/${nyear}`;
+    print(timedate);
     document.getElementById("myclock").innerText = timedate;
 }
 //function runScript(){
