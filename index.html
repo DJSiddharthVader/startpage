@@ -8,39 +8,53 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <script src="script.js"> </script>
     <div class="search">
         <form class="searchForm" method="GET" action="https://duckduckgo.com/?q=">
             <input class="searchInput" type="text" name="q" placeholder="捜索" autofocus>
         </form>
     </div> 
-        <div class="box-item">
-            <div class="item-heading">メディア</div>
-            <ul>
-              <li><a href="https://www.youtube.com/feed/subscriptions">Youtube</a></li>
-              <li><a href="https://netflix.com">Netflix</a></li>
-              <li><a href="https://old.reddit.com">Reddit</a></li>
-              <li><a href="http://localhost:9091/transmission/web/">Torrent</a></li>
-            </ul>
-        </div>
-        <div class="box-item">
-            <div class="item-heading">学校</div>
-            <ul>
-              <li><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
-              <li><a href="https://github.com/DJSiddharthVader">GitHub</a></li>
-              <li><a href="https://canvas.cmu.edu/">Canvas</a></li>
-              <li><a href="https://piazza.com">Piazza</a></li>
-            </ul>
-        </div>
+    <div class="box-item">
+        <div class="item-heading">ツール</div>
+        <ul>
+            <li><div class='clock' id='clock'></div></li>
+        </ul>
+    </div>
+    <div class="box-item">
+        <div class="item-heading">メディア</div>
+        <ul>
+          <li><a href="https://old.reddit.com">Reddit</a></li>
+          <li><a href="https://www.youtube.com/feed/subscriptions">Youtube</a></li>
+          <li><a href="https://netflix.com">Netflix</a></li>
+        </ul>
+    </div>
+    <div class="box-item">
+        <div class="item-heading">タイム</div>
+        <ul>
+          <li><a href="https://github.com/DJSiddharthVader">GitHub</a></li>
+          <li><a href="http://localhost:9091/transmission/web/">Torrent</a></li>
+          <li><a href="https://127.0.0.1:8384/#">Syncthing</a></li>
+        </ul>
+    </div>
+    <div class="box-item">
+        <div class="item-heading">学校</div>
+        <ul>
+          <li><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
+          <li><a href="https://canvas.cmu.edu/">Canvas</a></li>
+          <li><a href="https://piazza.com">Piazza</a></li>
+        </ul>
+    </div>
 </body>
+<script>
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+date =  new Date();
+year = date.getFullYear();
+month = months[date.getMonth()];
+day = date.getDate();
+day_name = days[day];
+hour = ((date.getHours() < 10)?"0":"") + ((date.getHours() > 12)?date.getHours() - 5 - 12:date.getHours() - 5);
+min = ((date.getHours() > 10)?"0":"") + date.getMinutes();
+APM = (date.getHours() > 12)?"PM":"AM";
+document.getElementById("clock").innerHTML = `${hour}:${min}${APM} ${day_name}, ${month} ${day} ${year}`;
+</script>
 </html>
-<!-- Misc
-<base target="_blank"> lets all links open in a new window
-タイム フェイスブック ツール
-<div class="item-heading"></div>
-    <ul>
-        <li><a href="https://xkcd.com">xkcd</a></li>
-        <li><a href=""></a></li>
-    </ul>
-</div>
--->
