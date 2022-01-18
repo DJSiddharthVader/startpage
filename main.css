@@ -11,6 +11,7 @@ html {
 }
 body {
     width: 100%; 
+    opacity: 0.92;
     /* margin: auto; */
     display: table-cell;
     vertical-align: middle;
@@ -23,32 +24,35 @@ body {
     background-position: center;
 }
 
+.clock {
+	-webkit-box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
+	-moz-box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
+	box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
+    border: 6px solid var(--color1);
+	background-color: var(--color2);
+	color: var(--color7);
+    font-family: Terminus;
+	font-size: 2.4em;
+    text-align: center;
+    width: 97%;
+    margin: 1%;
+}
 .search {
 	-webkit-box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
 	-moz-box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
 	box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
     border: 6px solid var(--color1);
-    width: 96%;
+    width: 97%;
     margin: 1%;
 }
 .searchInput {
     font-family: Terminus;
+	font-size: 2.4em;
 	background-color: var(--color3);
 	color: var(--color7);
-	font-size: 2.4em;
     border: 0px;
     margin: auto;
-    width: 100%;
-    opacity: 0.85;
-}
-.clock {
-    font-family: "Terminus";
-    list-style: none;
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: 510;
-    text-decoration: none;
-    cursor: pointer;
+    width: 99.75%;
 }
 
 .item-heading {
@@ -66,32 +70,31 @@ body {
     border: 6px solid var(--color1);
     background: var(--color3);
     color: var(--color7);
-    opacity: 0.85;
-    height: 80%;
-    width: 46%;
+    height: 90%;
+    width: 22%;
     margin: 1%;
     float: left;
-    text-align: center;
+    text-align: left;
     font-family: "Terminus";
 }
 ul {
     list-style: none;
     margin: 0;
-    color: var(--color7);
     padding: 5px;
+    color: var(--color7);
 }
 li {
     padding: 5px;
 }
 li a {
-    color: var(--color7);
     font-size: 1.5em;
     font-weight: 510;
     text-decoration: none;
     cursor: pointer;
+    color: var(--color7);
 }
 li a:link, a:focus {
-    color: var(--color5);
+    color: var(--color7);
 }
 li a:hover {
     color: var(--color4);
