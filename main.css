@@ -75,24 +75,11 @@ body {
     border: 6px solid var(--color1);
     background: var(--color3);
     color: var(--color7);
+    text-align: center;
+    font-family: "Terminus";
     height: 90%;
     width: 30%;
     margin: 0.05% auto;
-    text-align: center;
-    font-family: "Terminus";
-}
-.wide-box-item {
-	-webkit-box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
-	-moz-box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
-	box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
-    border: 6px solid var(--color1);
-    background: var(--color3);
-    color: var(--color7);
-    height: 90%;
-    width: 96%;
-    margin: auto;
-    text-align: left;
-    font-family: "Terminus";
 }
 ul {
     list-style: none;
@@ -120,5 +107,46 @@ li a:hover {
     color: var(--color4);
     cursor: pointer;
     font-weight: 700;
+    text-decoration: none;
+}
+
+.wide-box-item {
+	-webkit-box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
+	-moz-box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
+	box-shadow: 7px 7px 5px 1px rgba(0,0,0,0.6);
+    border: 6px solid var(--color1);
+    background: var(--color3);
+    color: var(--color7);
+    height: 90%;
+    width: 96%;
+    margin: auto;
+    text-align: center;
+    font-family: "Terminus";
+}
+table {
+    background: var(--color3);
+    font-family: "Terminus";
+    color: var(--color7);
+    margin: auto;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+td {
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+}
+td a {
+    color: var(--color7);
+    cursor: pointer;
+    text-decoration: none;
+}
+td a:link, a:focus {
+    color: var(--color7);
+    text-decoration: none;
+}
+td a:hover {
+    color: var(--color4);
+    cursor: pointer;
     text-decoration: none;
 }
